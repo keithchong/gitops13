@@ -5,6 +5,26 @@ config:
     name: cicd
 environments:
 - apps:
+  - name: app-taxi2
+    services:
+    - name: taxi2
+      pipelines:
+        integration:
+          bindings:
+          - a-long-environment-name-app-taxi2-taxi2-binding
+          - github-push-binding
+      source_url: http://github.com/keithchong/taxi2.git
+      webhook:
+        secret:
+          name: webhook-secret-a-long-environment-name-taxi2
+          namespace: cicd
+  name: a-long-environment-name
+  pipelines:
+    integration:
+      bindings:
+      - github-push-binding
+      template: app-ci-template
+- apps:
   - name: app-taxi
     services:
     - name: taxi

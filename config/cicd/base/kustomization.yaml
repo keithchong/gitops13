@@ -1,6 +1,7 @@
 resources:
 - 01-namespaces/cicd-environment.yaml
 - 02-rolebindings/argocd-admin.yaml
+- 02-rolebindings/internal-registry-cicd-binding.yaml
 - 02-rolebindings/pipeline-service-account.yaml
 - 02-rolebindings/pipeline-service-role.yaml
 - 02-rolebindings/pipeline-service-rolebinding.yaml
@@ -8,6 +9,7 @@ resources:
 - 03-tasks/set-commit-status-task.yaml
 - 04-pipelines/app-ci-pipeline.yaml
 - 04-pipelines/ci-dryrun-from-push-pipeline.yaml
+- 05-bindings/a-long-environment-name-app-taxi2-taxi2-binding.yaml
 - 05-bindings/dev-app-taxi-taxi-binding.yaml
 - 05-bindings/github-push-binding.yaml
 - 06-templates/app-ci-build-from-push-template.yaml
