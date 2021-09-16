@@ -18,6 +18,19 @@ environments:
         secret:
           name: webhook-secret-a-long-environment-name-taxi2
           namespace: cicd
+  - name: app-taxi
+    services:
+    - name: taxi
+      pipelines:
+        integration:
+          bindings:
+          - a-long-environment-name-app-taxi-taxi-binding
+          - github-push-binding
+      source_url: http://github.com/keithchong/taxi.git
+      webhook:
+        secret:
+          name: webhook-secret-a-long-environment-name-taxi
+          namespace: cicd
   name: a-long-environment-name
   pipelines:
     integration:

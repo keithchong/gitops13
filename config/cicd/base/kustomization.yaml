@@ -9,6 +9,7 @@ resources:
 - 03-tasks/set-commit-status-task.yaml
 - 04-pipelines/app-ci-pipeline.yaml
 - 04-pipelines/ci-dryrun-from-push-pipeline.yaml
+- 05-bindings/a-long-environment-name-app-taxi-taxi-binding.yaml
 - 05-bindings/a-long-environment-name-app-taxi2-taxi2-binding.yaml
 - 05-bindings/dev-app-taxi-taxi-binding.yaml
 - 05-bindings/github-push-binding.yaml

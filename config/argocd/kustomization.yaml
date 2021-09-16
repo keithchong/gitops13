@@ -1,4 +1,5 @@
 resources:
+- a-long-environment-name-app-taxi-app.yaml
 - a-long-environment-name-app-taxi2-app.yaml
 - a-long-environment-name-env-app.yaml
 - argo-app.yaml
