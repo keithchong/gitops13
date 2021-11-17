@@ -25,6 +25,11 @@ spec:
       - image: nginxinc/nginx-unprivileged:latest
         imagePullPolicy: Always
         name: taxi
+        resources:
+          limits:
+            memory: "200Mi"
+          requests:
+            memory: "100Mi"
         ports:
         - containerPort: 8080
         resources: {}
